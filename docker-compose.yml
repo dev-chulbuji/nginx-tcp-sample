@@ -8,10 +8,10 @@ services:
     ports:
       - 1924:1924
   nodeapp_1:
-    image: nodeapp:v0.0.1
+    image: nodeapp:${VERSION}
     container_name: nodeapp_1
   nodeapp_2:
-    image: nodeapp:v0.0.1
+    image: nodeapp:${VERSION}
     container_name: nodeapp_2
 
 
