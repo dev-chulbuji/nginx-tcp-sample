@@ -5,4 +5,4 @@ build:
 	docker build -t nodeapp:$(NODEAPP_VERSION) ./nodeapp
 
 run:
-	export VERSION=$(NODEAPP_VERSION); docker-compose down; docker-compose up -d;
+	export VERSION=$(NODEAPP_VERSION); docker-compose down; docker-compose up;
