@@ -7,10 +7,11 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
       - 1924:1924
-  nodeapp:
+  nodeapp_1:
     image: nodeapp:v0.0.1
-    container_name: nodeapp
-    ports:
-      - 3000:3000
+    container_name: nodeapp_1
+  nodeapp_2:
+    image: nodeapp:v0.0.1
+    container_name: nodeapp_2
 
 
