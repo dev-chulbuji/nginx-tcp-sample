@@ -13,6 +13,8 @@ services:
   nodeapp_1:
     image: nodeapp:${VERSION}
     container_name: nodeapp_1
+    environment:
+      SERVICE_NAME: nodeapp_1
     env_file:
       - nodeapp/.env
     depends_on:
@@ -22,6 +24,8 @@ services:
   nodeapp_2:
     image: nodeapp:${VERSION}
     container_name: nodeapp_2
+    environment:
+      SERVICE_NAME: nodeapp_2
     env_file:
       - nodeapp/.env
     depends_on:
